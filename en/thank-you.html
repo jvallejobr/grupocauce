@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You – Grupo Cauce</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
+<header class="navbar" role="banner">
+  <div class="navbar-container">
+    <a href="/en/index.html" class="logo" aria-label="Grupo Cauce Logo">
+      <img src="/assets/logo1.svg" alt="Grupo Cauce" />
+    </a>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+
+    <!-- Desktop nav -->
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="/en/index.html" class="nav-link">Home</a>
+      <a href="/en/services/finance.html" class="nav-link">Finance</a>
+      <a href="/en/services/marketing-ai.html" class="nav-link">Marketing &amp; AI</a>
+      <a href="/index.html" class="lang-switch btn-lang" hreflang="es">ES</a>
+    </nav>
+  </div>
+
+  <!-- Mobile nav drawer -->
+  <nav id="mobileMenu" class="mobile-nav" role="navigation" aria-label="Mobile menu">
+    <a href="/en/index.html" class="mobile-link">Home</a>
+    <a href="/en/services/finance.html" class="mobile-link">Finance</a>
+    <a href="/en/services/marketing-ai.html" class="mobile-link">Marketing &amp; AI</a>
+    <a href="/index.html" class="mobile-link btn-lang" hreflang="es">ES</a>
+  </nav>
+</header>
+
 <body>
   <main class="features" style="text-align:center">
     <h2>Thank you! 👋</h2>
@@ -21,4 +46,37 @@
 </section>
 
 </body>
+<script>
+  (function () {
+    const btn = document.querySelector('.menu-toggle');
+    const drawer = document.getElementById('mobileMenu');
+
+    if (!btn || !drawer) return;
+
+    function closeMenu() {
+      drawer.style.display = 'none';
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    function openMenu() {
+      drawer.style.display = 'flex';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    // Close when clicking a link
+    drawer.addEventListener('click', (e) => {
+      if (e.target.matches('a')) closeMenu();
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+</script>
+
 </html>

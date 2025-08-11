@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gracias – Grupo Cauce</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<header class="navbar" role="banner">
+  <div class="navbar-container">
+    <a href="/" class="logo" aria-label="Grupo Cauce Logo">
+      <img src="/assets/logo1.svg" alt="Grupo Cauce" />
+    </a>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+
+    <!-- Desktop nav -->
+    <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+      <a href="/" class="nav-link">Inicio</a>
+      <a href="/servicios/finanzas.html" class="nav-link">Finanzas</a>
+      <a href="/servicios/marketing-ia.html" class="nav-link">Marketing &amp; IA</a>
+      <a href="/en/index.html" class="lang-switch btn-lang" hreflang="en">EN</a>
+    </nav>
+  </div>
+
+  <!-- Mobile nav drawer -->
+  <nav id="mobileMenu" class="mobile-nav" role="navigation" aria-label="Menú móvil">
+    <a href="/" class="mobile-link">Inicio</a>
+    <a href="/servicios/finanzas.html" class="mobile-link">Finanzas</a>
+    <a href="/servicios/marketing-ia.html" class="mobile-link">Marketing &amp; IA</a>
+    <a href="/en/index.html" class="mobile-link btn-lang" hreflang="en">EN</a>
+  </nav>
+</header>
+
 <body>
   <main class="features" style="text-align:center">
     <h2>¡Gracias! 👋</h2>
@@ -18,5 +43,38 @@
   </blockquote>
 </section>
   </main>
+  <script>
+  (function () {
+    const btn = document.querySelector('.menu-toggle');
+    const drawer = document.getElementById('mobileMenu');
+
+    if (!btn || !drawer) return;
+
+    function closeMenu() {
+      drawer.style.display = 'none';
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    function openMenu() {
+      drawer.style.display = 'flex';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    // Close when clicking a link
+    drawer.addEventListener('click', (e) => {
+      if (e.target.matches('a')) closeMenu();
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+</script>
+
 </body>
 </html>
