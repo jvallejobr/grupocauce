@@ -33,101 +33,83 @@
   </script>
 </head>
 <body>
-  <header class="navbar" role="banner">
-    <div class="navbar-container">
-      <a href="/en/" class="logo" aria-label="Grupo Cauce Logo">
-        <img src="../assets/logo1.svg" alt="Grupo Cauce" />
-      </a>
-      <nav class="nav-links" role="navigation" aria-label="Main navigation">
-        <a href="/" class="lang-switch" hreflang="es">ES</a>
-      </nav>
-    </div>
-  </header>
+<header class="navbar" role="banner">
+  <div class="navbar-container">
+    <a href="/en/index.html" class="logo" aria-label="Grupo Cauce Logo">
+      <img src="/assets/logo1.svg" alt="Grupo Cauce" />
+    </a>
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="/en/index.html" class="nav-link">Home</a>
+      <a href="/en/services/finance.html" class="nav-link">Finance</a>
+      <a href="/en/services/marketing-ai.html" class="nav-link">Marketing &amp; AI</a>
+      <a href="/index.html" class="lang-switch btn-lang" hreflang="es">ES</a>
+    </nav>
+  </div>
+</header>
+
+
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" role="region" aria-label="Hero section">
-      <div class="hero-content">
-        <h1>Finance, Marketing & AI Automation</h1>
-        <p>Make better financial decisions and scale growth with campaigns, automation and digital assistants.</p>
-        <a href="#contact" class="btn-primary">Contact Us</a>
-      </div>
-      <div class="hero-image">
-        <img src="../assets/images/hero-iqsword.png" alt="Team working on AI strategy" loading="lazy" />
-      </div>
-    </section>
+  <!-- Hero Section -->
+<section class="hero" role="region" aria-label="Hero section">
+  <div class="hero-content">
+    <h1>Consulting</h1>
+    <p>We have a team of qualified specialists who provide consulting services to support organizations on their path toward strategic transformation, improved efficiency, and the achievement of their goals.</p>
+    <a href="#contact" class="btn-primary">Contact Us</a>
+  </div>
+  <div class="hero-image">
+<img src="/assets/images/hero-iqsword.png" alt="Team working on AI strategy" loading="lazy">
+  </div>
+</section>
+  <!-- Services Section -->
+<section id="features" class="features" role="region" aria-label="Services">
+  <h2>Our Solutions</h2>
+  <div class="features-grid two">
+    <div class="feature-item">
+      <h3>Finance</h3>
+      <p>We help you gain complete control over your company’s financial health. From an in-depth diagnosis revealing margins, liquidity, and hidden opportunities, to clear forecasting and financing plans. Includes business valuation, restructuring to improve profitability, and CFO-as-a-Service support to execute strategies with real-time data and make confident, informed decisions.</p>
+      <a href="/en/services/finance.html" class="btn-primary">View services</a>
+    </div>
+    <div class="feature-item">
+      <h3>Marketing & AI</h3>
+      <p>We drive your growth by combining high-impact marketing strategies with intelligent automation. We design conversion-optimized (CRO) campaigns, build e-commerce partnerships, and optimize funnels to increase sales and retention. We implement 24/7 chatbots and voice agents integrated with your CRM, creating automations that enhance customer experience and free up internal resources.</p>
+      <a href="/en/services/marketing-ai.html" class="btn-primary">View services</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Services Section -->
-    <section id="features" class="features" role="region" aria-label="Services">
-      <h2>Corporate Finance</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h3>Strategic Financial Diagnosis</h3>
-          <p>Clear view of margins, liquidity, cost structure and bottlenecks. Executive report with quick action points.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Forecasting & Cash Planning + CFO-as-a-Service</h3>
-          <p>Custom financial model, cash projections and scenarios. Monthly CFO-as-a-Service to execute and adjust.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Financing Readiness</h3>
-          <p>Professional presentation to banks/investors: business case, capital needs and use of funds. Guided process.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Valuation & Restructuring</h3>
-          <p>Valuation (DCF & multiples) and profitability/efficiency improvement plans. Liquidity and results focus.</p>
-        </div>
-      </div>
 
-      <h2>Marketing & AI Automation</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h3>Digital Campaigns with CRO</h3>
-          <p>Strategy and multi-channel execution with conversion rate optimization (CRO) to grow sales sustainably.</p>
-        </div>
-        <div class="feature-item">
-          <h3>E-commerce Marketing Partnership</h3>
-          <p>Partnership to scale your online store: end-to-end strategy, campaign management and ongoing optimization for sales and retention.</p>
-        </div>
-        <div class="feature-item">
-          <h3>AI Chatbots & Voice Agents</h3>
-          <p>24/7 virtual assistants to answer, book and route. CRM and key channel integrations included.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Funnel & CRM Optimization</h3>
-          <p>Automated customer journeys, integrations and segmentation to increase conversions and LTV.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact" role="region" aria-label="Contact">
-      <h2>Let’s Talk</h2>
-      <h2>Let’s Talk</h2>
-<form id="contactFormEN" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
-  <input type="hidden" name="_subject" value="New contact from Grupo Cauce" />
-  <label>
-    <span>Name</span>
-    <input type="text" name="name" required />
-  </label>
-  <label>
-    <span>Email</span>
-    <input type="email" name="email" required />
-  </label>
-  <label>
-    <span>Phone (optional)</span>
-    <input type="tel" name="phone" />
-  </label>
-  <label>
-    <span>Company (optional)</span>
-    <input type="text" name="company" />
-  </label>
-  <label>
-    <span>Message</span>
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-  <button type="submit">Send</button>
-</form>
+
+<!-- Contact Section -->
+<section id="contact" class="contact" role="region" aria-label="Contact">
+  <h2>Get in Touch</h2>
+
+  <form id="contactFormEN" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
+    <input type="hidden" name="_subject" value="New contact from Grupo Cauce" />
+    <label>
+      <span>Name</span>
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      <span>Phone (optional)</span>
+      <input type="tel" name="phone" />
+    </label>
+    <label>
+      <span>Company (optional)</span>
+      <input type="text" name="company" />
+    </label>
+    <label>
+      <span>Message</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</section>
 
 <script>
 document.getElementById('contactFormEN').addEventListener('submit', async function(e) {
@@ -150,10 +132,11 @@ document.getElementById('contactFormEN').addEventListener('submit', async functi
 });
 </script>
 
+
     </section>
     <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem">
   <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
-    “The impediment to action advances action. What stands in the way becomes the way.”<br>
+    “What stands in the way becomes the way.”<br>
     <span style="display:block;margin-top:.5rem;font-weight:bold">– Marcus Aurelius</span>
   </blockquote>
 </section>

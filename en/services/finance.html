@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Cauce – Finance Services</title>
+  <meta name="description" content="Strategic financial consulting: diagnostic, forecasting & cash flow planning, restructuring, fundraising readiness, CFO-as-a-Service, and business valuation." />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="alternate" hreflang="es" href="https://grupocauce.com/servicios/finanzas/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Grupo Cauce – Finance Services" />
+  <meta property="og:description" content="Diagnostic, forecasting, restructuring, fundraising, CFO-as-a-Service, and valuation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://grupocauce.com/en/services/finance/" />
+  <meta property="og:image" content="/assets/logo.svg" />
+<header class="navbar" role="banner">
+  <div class="navbar-container">
+    <a href="/en/index.html" class="logo" aria-label="Grupo Cauce Logo">
+      <img src="/assets/logo1.svg" alt="Grupo Cauce" />
+    </a>
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="/en/index.html" class="nav-link">Home</a>
+      <a href="/en/services/finance.html" class="nav-link">Finance</a>
+      <a href="/en/services/marketing-ai.html" class="nav-link">Marketing &amp; AI</a>
+      <a href="/index.html" class="lang-switch btn-lang" hreflang="es">ES</a>
+    </nav>
+  </div>
+</header>
+
+
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" role="region" aria-label="Hero section">
+      <div class="hero-content">
+        <h1>Finance Services</h1>
+        <p>We help business owners and executives gain clarity over their numbers, organize their finances, and make decisions with confidence.</p>
+        <a href="#contact" class="btn-primary">Contact Us</a>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/images/hero-iqsword.png" alt="Team analyzing finances with AI" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Finance Services -->
+    <section id="features" class="features" role="region" aria-label="Finance Services">
+      <h2>Strategic Financial Consulting</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>Strategic financial diagnostic</h3>
+          <p>A clear snapshot of your business: margins, liquidity, cost structure, leverage, and bottlenecks. We deliver immediate recommendations and priorities to organize and improve results. Typical duration: 2–3 weeks.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Forecasting & cash flow planning</h3>
+          <p>We build a tailored financial model with cash flow, P&amp;L, and balance forecasts, pressure‑test scenarios, and validate assumptions with your team. Includes capital needs analysis (working capital, CAPEX, debt) and periodic follow‑ups.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Restructuring & profitability improvement</h3>
+          <p>For companies under cash pressure or with deteriorated margins: we optimize fixed/variable costs, identify unprofitable lines, redefine pricing and break‑even, and design a phased plan with a strong focus on liquidity and operating efficiency.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Fundraising readiness</h3>
+          <p>We prepare you to approach banks or investors professionally: business plan and investment case, capital structure and use of funds, plus executive materials (pitch and clear financials) for a confident fundraising process.</p>
+        </div>
+        <div class="feature-item">
+          <h3>CFO-as-a-Service</h3>
+          <p>Monthly, senior‑level financial support without hiring a full‑time CFO: KPI monitoring, decision support, coordination with accountants, banks or partners, and a planning cadence to keep the financial and operating course.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Business valuation</h3>
+          <p>We estimate company value using DCF and comparable multiples and integrate scenario analysis. Useful for partial sales, partner entry, successions, or strategic negotiations, with transparent assumptions and sensitivities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" role="region" aria-label="Contact">
+      <h2>Get in Touch</h2>
+      <form id="contactFormEN" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
+        <input type="hidden" name="_subject" value="New contact from Grupo Cauce – Finance" />
+        <label><span>Name</span><input type="text" name="name" required /></label>
+        <label><span>Email</span><input type="email" name="email" required /></label>
+        <label><span>Phone (optional)</span><input type="tel" name="phone" /></label>
+        <label><span>Company (optional)</span><input type="text" name="company" /></label>
+        <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <script>
+    document.getElementById('contactFormEN').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      try {
+        const res = await fetch('https://formspree.io/f/xnnzlbvj', {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) { window.location.href = '/en/thank-you.html'; }
+        else { alert('There was a problem sending your message.'); }
+      } catch { alert('Connection error.'); }
+    });
+    </script>
+
+    <!-- Quote -->
+    <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem">
+      <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
+        “The impediment to action advances action. What stands in the way becomes the way.”<br>
+        <span style="display:block;margin-top:.5rem;font-weight:bold">– Marcus Aurelius</span>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <p><a href="mailto:info@grupocauce.com">info@grupocauce.com</a></p>
+    <p>&copy; Grupo Cauce 2025. All rights reserved.</p>
+  </footer>
+</body>
+</html>

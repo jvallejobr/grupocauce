@@ -31,25 +31,28 @@
     "description": "Finanzas, marketing y automatización con IA para simplificar operaciones y escalar resultados."
   }
   </script>
-</head>
-<body>
-  <header class="navbar" role="banner">
-    <div class="navbar-container">
-      <a href="/" class="logo" aria-label="Grupo Cauce Logo">
-        <img src="assets/logo1.svg" alt="Grupo Cauce" />
-      </a>
-      <nav class="nav-links" role="navigation" aria-label="Navegación principal">
-        <a href="/en/index.html" class="lang-switch" hreflang="en">EN</a>
-      </nav>
-    </div>
-  </header>
+<header class="navbar" role="banner">
+  <div class="navbar-container">
+    <a href="/" class="logo" aria-label="Grupo Cauce Logo">
+      <img src="/assets/logo1.svg" alt="Grupo Cauce" />
+    </a>
+    <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+      <a href="/" class="nav-link">Inicio</a>
+      <a href="/servicios/finanzas.html" class="nav-link">Finanzas</a>
+      <a href="/servicios/marketing-ia.html" class="nav-link">Marketing &amp; IA</a>
+      <a href="/en/index.html" class="lang-switch btn-lang" hreflang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+
 
   <main>
     <!-- Hero Section -->
     <section class="hero" role="region" aria-label="Sección principal">
       <div class="hero-content">
-        <h1>Finanzas, Marketing y Automatización con IA</h1>
-        <p>Tomá mejores decisiones financieras y escalá tu crecimiento con campañas, automatizaciones y asistentes digitales.</p>
+        <h1>Consultoría</h1>
+        <p>Contamos con un equipo especialistas capacitados para brindar servicios de consultoría con el fin de acompañar a las organizaciones en su camino hacia la transformación estratégica, la mejora de eficiencia y el cumplimiento de sus objetivos.</p>
         <a href="#contact" class="btn-primary">Contáctanos</a>
       </div>
       <div class="hero-image">
@@ -57,74 +60,53 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="features" class="features" role="region" aria-label="Servicios">
-      <h2>Finanzas para Empresas</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h3>Diagnóstico Financiero Estratégico</h3>
-          <p>Foto clara del negocio: márgenes, liquidez, estructura de costos y cuellos de botella. Informe ejecutivo y devolución rápida.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Proyección y Planificación de Fondos + CFO-as-a-Service</h3>
-          <p>Modelo financiero a medida, proyecciones de caja y escenarios. Acompañamiento mensual tipo CFO-as-a-Service para ejecutar y ajustar.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Preparación para Financiamiento</h3>
-          <p>Presentación profesional ante bancos o inversores: business case, necesidades de capital y uso de fondos. Acompañamiento en el proceso.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Valuación y Reestructuración</h3>
-          <p>Valuación (DCF y múltiplos) y planes de mejora de rentabilidad y eficiencia. Enfoque en liquidez y resultados.</p>
-        </div>
-      </div>
+<!-- Services Section -->
+<section id="features" class="features" role="region" aria-label="Servicios">
+  <h2>Nuestras Soluciones</h2>
+  <div class="features-grid two">
+    <div class="feature-item">
+      <h3>Finanzas</h3>
+      <p>Te ayudamos a tener control total sobre la salud financiera de tu empresa. Desde un diagnóstico profundo que revela márgenes, liquidez y oportunidades ocultas, hasta proyecciones claras y planes de financiamiento. Incluye valuación de tu negocio, reestructuración para mejorar la rentabilidad y acompañamiento tipo CFO-as-a-Service para ejecutar estrategias con datos en tiempo real y tomar decisiones seguras.</p>
+      <a href="/servicios/finanzas.html" class="btn-primary">Ver servicios</a>
+    </div>
+    <div class="feature-item">
+      <h3>Marketing & IA</h3>
+      <p>Impulsamos tu crecimiento combinando estrategias de marketing de alto impacto con automatización inteligente. Diseñamos campañas con optimización de conversión (CRO), creamos partnerships para e-commerce, y optimizamos embudos para aumentar ventas y retención. Implementamos chatbots y agentes de voz 24/7 conectados a tu CRM, integrando automatizaciones que mejoran la experiencia del cliente y liberan recursos internos.</p>
+      <a href="/servicios/marketing-ia.html" class="btn-primary">Ver servicios</a>
+    </div>
+  </div>
+</section>
 
-      <h2>Marketing y Automatización con IA</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h3>Campañas Digitales con CRO</h3>
-          <p>Estrategia y ejecución multicanal con optimización de tasa de conversión (CRO) para crecer en ventas de forma sostenida.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Socio de Marketing para E-commerce</h3>
-          <p>Partnership para escalar tu tienda online: estrategia integral, gestión de campañas y optimización continua para ventas y retención.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Chatbots y Agentes de Voz IA</h3>
-          <p>Asistentes virtuales 24/7 que responden consultas, toman reservas y derivan casos. Integración con CRM y canales clave.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Optimización de Embudos y CRM</h3>
-          <p>Automatización del recorrido del cliente, integraciones y segmentación para aumentar conversiones y LTV.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact Section -->
-    <form id="contactFormES" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
-  <input type="hidden" name="_subject" value="Nuevo contacto desde Grupo Cauce" />
-  <label>
-    <span>Nombre</span>
-    <input type="text" name="name" required />
-  </label>
-  <label>
-    <span>Email</span>
-    <input type="email" name="email" required />
-  </label>
-  <label>
-    <span>Teléfono (opcional)</span>
-    <input type="tel" name="phone" />
-  </label>
-  <label>
-    <span>Empresa (opcional)</span>
-    <input type="text" name="company" />
-  </label>
-  <label>
-    <span>Mensaje</span>
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-  <button type="submit">Enviar</button>
-</form>
+   <!-- Contact Section -->
+<section id="contact" class="contact" role="region" aria-label="Contacto">
+  <h2>Hablemos</h2>
+
+  <form id="contactFormES" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
+    <input type="hidden" name="_subject" value="Nuevo contacto desde Grupo Cauce" />
+    <label>
+      <span>Nombre</span>
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      <span>Teléfono (opcional)</span>
+      <input type="tel" name="phone" />
+    </label>
+    <label>
+      <span>Empresa (opcional)</span>
+      <input type="text" name="company" />
+    </label>
+    <label>
+      <span>Mensaje</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
 <script>
 document.getElementById('contactFormES').addEventListener('submit', async function(e) {
@@ -149,7 +131,7 @@ document.getElementById('contactFormES').addEventListener('submit', async functi
     </section>
 <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem">
   <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
-    “El impedimento a la acción adelanta la acción. Lo que se interpone en el camino se convierte en el camino.”<br>
+    “Lo que se interpone en el camino se convierte en el camino.”<br>
     <span style="display:block;margin-top:.5rem;font-weight:bold">– Marco Aurelio</span>
   </blockquote>
 </section>
