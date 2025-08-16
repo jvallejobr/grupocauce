@@ -10,7 +10,7 @@
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml" />
 
   <!-- SEO: Alternate Language -->
-  <link rel="alternate" hreflang="es" href="https://grupocauce.com/" />
+  <link rel="alternate" hreflang="es" href="https://grupocauce.com/index.html" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Grupo Cauce – Finance, Marketing & AI Automation" />
@@ -22,13 +22,13 @@
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "Grupo Cauce",
-    "url": "https://grupocauce.com/en",
-    "logo": "https://grupocauce.com/assets/logo.svg",
-    "email": "info@grupocauce.com",
-    "description": "Finance, marketing and AI automation to simplify operations and scale results."
+    "@context":"https://schema.org",
+    "@type":"Corporation",
+    "name":"Grupo Cauce",
+    "url":"https://grupocauce.com/en",
+    "logo":"https://grupocauce.com/assets/logo.svg",
+    "email":"info@grupocauce.com",
+    "description":"Finance, marketing and AI automation to simplify operations and scale results."
   }
   </script>
 </head>
@@ -41,16 +41,14 @@
 
     <!-- Hamburger (mobile only) -->
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
+      <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
     </button>
 
     <!-- Desktop nav -->
     <nav class="nav-links" role="navigation" aria-label="Main navigation">
       <a href="/en/index.html" class="nav-link">Home</a>
-      <a href="/en/services/finance.html" class="nav-link">Finance</a>
-      <a href="/en/services/marketing-ai.html" class="nav-link">Marketing &amp; AI</a>
+      <a href="/en/services/financial.html" class="nav-link">Financial</a>
+      <a href="/en/services/commercial.html" class="nav-link">Commercial</a>
       <a href="/index.html" class="lang-switch btn-lang" hreflang="es">ES</a>
     </nav>
   </div>
@@ -58,156 +56,82 @@
   <!-- Mobile nav drawer -->
   <nav id="mobileMenu" class="mobile-nav" role="navigation" aria-label="Mobile menu">
     <a href="/en/index.html" class="mobile-link">Home</a>
-    <a href="/en/services/finance.html" class="mobile-link">Finance</a>
-    <a href="/en/services/marketing-ai.html" class="mobile-link">Marketing &amp; AI</a>
+    <a href="/en/services/financial.html" class="mobile-link">Financial</a>
+    <a href="/en/services/commercial.html" class="mobile-link">Commercial</a>
     <a href="/index.html" class="mobile-link btn-lang" hreflang="es">ES</a>
   </nav>
 </header>
 
-
-
-
-  <main>
+<main>
   <!-- Hero Section -->
-<section class="hero" role="region" aria-label="Hero section">
-  <div class="hero-content">
-    <h1>Consulting</h1>
-    <p>We have a team of qualified specialists who provide consulting services to support organizations on their path toward strategic transformation, improved efficiency, and the achievement of their goals.</p>
-    <a href="#contact" class="btn-primary">Contact Us</a>
-  </div>
-  <div class="hero-image">
-<img src="/assets/images/hero-iqsword.png" alt="Team working on AI strategy" loading="lazy">
-  </div>
-</section>
+  <section class="hero" role="region" aria-label="Hero section">
+    <div class="hero-content">
+      <h1>Consulting</h1>
+      <p>We have a team of qualified specialists who provide consulting services to support organizations on their path toward strategic transformation, improved efficiency, and the achievement of their goals.</p>
+      <a href="#contact" class="btn-primary">Contact Us</a>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/images/1.jpg" alt="Team working on AI strategy" loading="lazy">
+    </div>
+  </section>
+
   <!-- Services Section -->
-<section id="features" class="features" role="region" aria-label="Services">
-  <h2>Our Solutions</h2>
-  <div class="features-grid two">
-    <div class="feature-item">
-      <h3>Finance</h3>
-      <p>We help you gain complete control over your company’s financial health. From an in-depth diagnosis revealing margins, liquidity, and hidden opportunities, to clear forecasting and financing plans. Includes business valuation, restructuring to improve profitability, and CFO-as-a-Service support to execute strategies with real-time data and make confident, informed decisions.</p>
-      <a href="/en/services/finance.html" class="btn-primary">View services</a>
+  <section id="features" class="features" role="region" aria-label="Services">
+    <h2>Our Solutions</h2>
+    <div class="features-grid two">
+      <div class="feature-item">
+        <h3>Finance</h3>
+        <p>We help you gain complete control over your company’s financial health. From an in-depth diagnosis revealing margins, liquidity, and hidden opportunities, to clear forecasting and financing plans. Includes business valuation, restructuring to improve profitability, and CFO-as-a-Service support to execute strategies with real-time data and make confident, informed decisions.</p>
+        <a href="/en/services/financial.html" class="btn-primary">View services</a>
+      </div>
+      <div class="feature-item">
+        <h3>Commercial</h3>
+        <p>We develop commercial solutions that enhance the performance of your entire sales process. We optimize websites and funnels to increase conversion, implement automated lead generation and follow-up systems, and analyze competitor performance to uncover opportunities. All designed to help your company achieve more sales without the need to increase ad spend.</p>
+        <a href="/en/services/commercial.html" class="btn-primary">View services</a>
+      </div>
     </div>
-    <div class="feature-item">
-      <h3>Marketing & AI</h3>
-      <p>We drive your growth by combining high-impact marketing strategies with intelligent automation. We design conversion-optimized (CRO) campaigns, build e-commerce partnerships, and optimize funnels to increase sales and retention. We implement 24/7 chatbots and voice agents integrated with your CRM, creating automations that enhance customer experience and free up internal resources.</p>
-      <a href="/en/services/marketing-ai.html" class="btn-primary">View services</a>
-    </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact" class="contact" role="region" aria-label="Contact">
+    <h2>Get in Touch</h2>
+    <form id="contactFormEN" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
+      <input type="hidden" name="_subject" value="New contact from Grupo Cauce" />
+      <label><span>Name</span><input type="text" name="name" required /></label>
+      <label><span>Email</span><input type="email" name="email" required /></label>
+      <label><span>Phone (optional)</span><input type="tel" name="phone" /></label>
+      <label><span>Company (optional)</span><input type="text" name="company" /></label>
+      <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
+  <!-- Quote -->
+  <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem">
+    <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
+      “What stands in the way becomes the way.”<br>
+      <span style="display:block;margin-top:.5rem;font-weight:bold">– Marcus Aurelius</span>
+    </blockquote>
+  </section>
+</main>
 
-
-<!-- Contact Section -->
-<section id="contact" class="contact" role="region" aria-label="Contact">
-  <h2>Get in Touch</h2>
-
-  <form id="contactFormEN" class="contact-form" action="https://formspree.io/f/xnnzlbvj" method="POST">
-    <input type="hidden" name="_subject" value="New contact from Grupo Cauce" />
-    <label>
-      <span>Name</span>
-      <input type="text" name="name" required />
-    </label>
-    <label>
-      <span>Email</span>
-      <input type="email" name="email" required />
-    </label>
-    <label>
-      <span>Phone (optional)</span>
-      <input type="tel" name="phone" />
-    </label>
-    <label>
-      <span>Company (optional)</span>
-      <input type="text" name="company" />
-    </label>
-    <label>
-      <span>Message</span>
-      <textarea name="message" rows="5" required></textarea>
-    </label>
-    <button type="submit">Send</button>
-  </form>
-</section>
+<footer id="site-footer" role="contentinfo">
+  <p><a href="mailto:info@grupocauce.com">info@grupocauce.com</a></p>
+  <p>&copy; Grupo Cauce 2025. All rights reserved.</p>
+</footer>
 
 <script>
-document.getElementById('contactFormEN').addEventListener('submit', async function(e) {
+(function(){const btn=document.querySelector('.menu-toggle');const drawer=document.getElementById('mobileMenu');if(!btn||!drawer)return;
+function closeMenu(){drawer.style.display='none';btn.setAttribute('aria-expanded','false');}
+function openMenu(){drawer.style.display='flex';btn.setAttribute('aria-expanded','true');}
+btn.addEventListener('click',()=>{const isOpen=btn.getAttribute('aria-expanded')==='true';isOpen?closeMenu():openMenu();});
+drawer.addEventListener('click',(e)=>{if(e.target.matches('a'))closeMenu();});
+document.addEventListener('keydown',(e)=>{if(e.key==='Escape')closeMenu();});})();
+document.getElementById('contactFormEN').addEventListener('submit', async function(e){
   e.preventDefault();
-  const formData = new FormData(this);
-  try {
-    const res = await fetch('https://formspree.io/f/xnnzlbvj', {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (res.ok) {
-      window.location.href = '/en/thank-you.html';
-    } else {
-      alert('There was a problem sending your message.');
-    }
-  } catch (err) {
-    alert('Connection error.');
-  }
+  const res = await fetch('https://formspree.io/f/xnnzlbvj',{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}});
+  if(res.ok) window.location.href='/en/thank-you.html'; else alert('There was a problem sending your message.');
 });
 </script>
-
-
-    </section>
-    <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem">
-  <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
-    “What stands in the way becomes the way.”<br>
-    <span style="display:block;margin-top:.5rem;font-weight:bold">– Marcus Aurelius</span>
-  </blockquote>
-</section>
-  </main>
-
-  <footer id="site-footer" role="contentinfo">
-    <p><a href="mailto:info@grupocauce.com">info@grupocauce.com</a></p>
-    <p>&copy; Grupo Cauce 2025. All rights reserved.</p>
-  </footer>
-  <script>
-  (function () {
-    const btn = document.querySelector('.menu-toggle');
-    const drawer = document.getElementById('mobileMenu');
-
-    if (!btn || !drawer) return;
-
-    function closeMenu() {
-      drawer.style.display = 'none';
-      btn.setAttribute('aria-expanded', 'false');
-    }
-    function openMenu() {
-      drawer.style.display = 'flex';
-      btn.setAttribute('aria-expanded', 'true');
-    }
-
-    btn.addEventListener('click', () => {
-      const isOpen = btn.getAttribute('aria-expanded') === 'true';
-      isOpen ? closeMenu() : openMenu();
-    });
-
-    // Close when clicking a link
-    drawer.addEventListener('click', (e) => {
-      if (e.target.matches('a')) closeMenu();
-    });
-
-    // Close on ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
-    });
-  })();
-</script>
-
 </body>
 </html>
-
-
-<!-- =========================================================
-FILE: /gracias.html  (Optional success page in Spanish)
-========================================================= -->
-
-
-
-<!-- =========================================================
-FILE: /en/thank-you.html  (Optional success page in English)
-========================================================= -->
-

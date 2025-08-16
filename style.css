@@ -27,6 +27,11 @@ img{max-width:100%;display:block}
 .btn-primary{background:#111;color:#fff;padding:.85rem 1.1rem;border-radius:10px;text-decoration:none;border:1px solid #111}
 .btn-primary:hover{opacity:.92}
 
+/* Rounded corners images */
+img {
+  border-radius: 12px; /* podés ajustar el valor (px o %) */
+}
+
 /* Features */
 .features{padding:2rem 1rem}
 .features h2{text-align:center;margin:2rem 0 1rem}
