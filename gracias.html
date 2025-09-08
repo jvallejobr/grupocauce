@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-<header class="navbar" role="banner">
-  <div class="navbar-container">
-    <a href="/" class="logo" aria-label="Grupo Cauce Logo">
-      <img src="/assets/logo1.svg" alt="Grupo Cauce" />
-    </a>
-
-    <!-- Hamburger (mobile only) -->
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-      <span class="menu-bar"></span>
-    </button>
-
-    <!-- Desktop nav -->
-    <nav class="nav-links" role="navigation" aria-label="Navegación principal">
-      <a href="/" class="nav-link">Inicio</a>
-      <a href="/servicios/finanzas.html" class="nav-link">Finanzas</a>
-      <a href="/servicios/marketing-ia.html" class="nav-link">Marketing &amp; IA</a>
-      <a href="/en/index.html" class="lang-switch btn-lang" hreflang="en">EN</a>
-    </nav>
-  </div>
-
-  <!-- Mobile nav drawer -->
-  <nav id="mobileMenu" class="mobile-nav" role="navigation" aria-label="Menú móvil">
-    <a href="/" class="mobile-link">Inicio</a>
-    <a href="/servicios/finanzas.html" class="mobile-link">Finanzas</a>
-    <a href="/servicios/marketing-ia.html" class="mobile-link">Marketing &amp; IA</a>
-    <a href="/en/index.html" class="mobile-link btn-lang" hreflang="en">EN</a>
-  </nav>
-</header>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias - Grupo Cauce</title>
+  <!-- Correct path to CSS file in root -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <main class="features" style="text-align:center">
-    <h2>¡Gracias! 👋</h2>
-    <p>Recibimos tu mensaje y te contactaremos a la brevedad.</p>
-    <p><a class="btn-primary" href="/">Volver al inicio</a></p>
-    <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem">
-  <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
-    “No es que tengamos poco tiempo, sino que desperdiciamos mucho.”<br>
-    <span style="display:block;margin-top:.5rem;font-weight:bold">– Seneca</span>
-  </blockquote>
-</section>
+  <header class="navbar" role="banner">
+    <div class="navbar-container">
+      <a href="/" class="logo" aria-label="Grupo Cauce Logo">
+        <img src="assets/logo1.svg" alt="Grupo Cauce" />
+      </a>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+        <a href="/" class="nav-link">Inicio</a>
+        <a href="servicios/finanzas.html" class="nav-link">Finanzas</a>
+        <a href="servicios/marketing-ia.html" class="nav-link">Marketing &amp; IA</a>
+        <a href="en/index.html" class="lang-switch btn-lang" hreflang="en">EN</a>
+      </nav>
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <nav id="mobileMenu" class="mobile-nav" role="navigation" aria-label="Menú móvil">
+      <a href="/" class="mobile-link">Inicio</a>
+      <a href="servicios/finanzas.html" class="mobile-link">Finanzas</a>
+      <a href="servicios/marketing-ia.html" class="mobile-link">Marketing &amp; IA</a>
+      <a href="en/index.html" class="mobile-link btn-lang" hreflang="en">EN</a>
+    </nav>
+  </header>
+
+  <main class="features">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; text-align: center;">
+      <h2>¡Gracias! 👋</h2>
+      <p style="margin: 1rem 0;">Recibimos tu mensaje y te contactaremos a la brevedad.</p>
+      <p><a class="btn-primary" href="/">Volver al inicio</a></p>
+      
+      <section class="quote" style="background:#f2f2f2;padding:2rem 1rem;text-align:center;margin-top:2rem;border-radius:14px;">
+        <blockquote style="font-size:1.3rem;max-width:900px;margin:0 auto;line-height:1.6">
+          "No es que tengamos poco tiempo, sino que desperdiciamos mucho."<br>
+          <span style="display:block;margin-top:.5rem;font-weight:bold">– Seneca</span>
+        </blockquote>
+      </section>
+    </div>
   </main>
+
+  <footer style="text-align:center;padding:2rem 1rem;color:#555;">
+    <p>&copy; 2025 Grupo Cauce. Todos los derechos reservados.</p>
+  </footer>
+
   <script>
   (function () {
     const btn = document.querySelector('.menu-toggle');
@@ -74,7 +89,6 @@
       if (e.key === 'Escape') closeMenu();
     });
   })();
-</script>
-
+  </script>
 </body>
 </html>
